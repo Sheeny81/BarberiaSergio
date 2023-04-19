@@ -259,3 +259,28 @@ footer.container-fluid{
     max-width: 100%;
     max-height: 100%;
 }
+
+#tabla-horarios {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.fa{
+    font-size: 24px;
+}
+
+.tel-cita{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:0 50px 0 50px;
+    color:#031b28;
+    text-decoration: none;
+}
+
+.tel-cita:hover {
+    color: #329ad1;
+}
+
+.car-contacto{
+    padding-bottom: 0;
+}
