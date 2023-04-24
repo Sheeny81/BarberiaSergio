@@ -29,6 +29,8 @@
 
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" >
+
         
         <!-- Bootstrap JS -->
         
@@ -68,7 +70,7 @@
             </symbol>
         </svg>
 
-        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
             <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
                 aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
                 <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
@@ -114,7 +116,7 @@
                     </button>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
 
         <header data-bs-theme="dark">
@@ -132,26 +134,57 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" target="_blank"
                                     href="https://www.facebook.com/barberiasergiocdmx">
-                                    <i class="fa fa-facebook icon-links"></i>
+                                    <span 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target=".navbar-collapse.show">
+                                        <i class="bi bi-facebook icon-links"></i>
+                                        <small class="d-md-none ms-2 text-link">Facebook</small>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://www.instagram.com/barberiasergiocdmx/">
-                                    <i class="fa fa-instagram icon-links"></i>
+                                <a class="nav-link" target="_blank" 
+                                href="https://www.instagram.com/barberiasergiocdmx/">
+                                    <span
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target=".navbar-collapse.show">
+                                        <i class="bi bi-instagram icon-links"></i>
+                                        <small class="d-md-none ms-2 text-link">Instagram</small>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="tel:+5255-5203-4675">
-                                    <i class="fa fa-phone icon-links"></i>
+                                <a class="nav-link" 
+                                href="#secc-contacto">
+                                    <span
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target=".navbar-collapse.show">
+                                        <i class="bi bi-telephone-forward-fill icon-links"></i>
+                                        <small class="d-md-none ms-2 text-link">Teléfonos</small>
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                             <li class="nav-item">
-                                <a class="nav-link text-link disabled" href="#">Tienda</a>
+                                <a class="nav-link text-link disabled" 
+                                href="#">
+                                    <span
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target=".navbar-collapse.show">
+                                    Tienda
+                                    </span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-link" href="#secc-nosotros">Nosotros</a>
+                                <a class="nav-link text-link" 
+                                href="#secc-nosotros">
+                                    <span
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target=".navbar-collapse.show">
+                                    Nosotros
+                                    </span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -293,11 +326,15 @@
                             necesidades. Ofrecemos una amplia gama de servicios, desde cortes de cabello y coloración hasta tratamientos
                             de spa y
                             masajes relajantes. Ven y déjanos cuidar de ti.</p>
+                        
+                        <a type="button" class="btn btn-outline-info float-end btn-cita-featurette" href="#secc-contacto">Haz una cita</a>
+                        
                     </div>
                     <div class="col-md-5 d-flex align-items-center">
                         <img class="feat-img img-fluid" src="assets\img\content\Cabello3.jpg" alt="Tratamientos capilares">
                     </div>
                 </div>
+                
 
 
                 <hr class="featurette-divider" id="secc-barba">
@@ -311,11 +348,15 @@
                         sea que necesites un recorte, un afeitado o un tratamiento de spa para la barba, nuestros barberos expertos te guiarán a
                         través de cada paso para asegurarnos de que obtengas exactamente el resultado que deseas. Ven y experimenta una
                         verdadera atención personalizada para tu barba, y descubre lo que significa sentirte y lucir lo mejor posible.</p>
+                        
+                        <a type="button" class="btn btn-outline-info btn-cita-featurette" href="#secc-contacto">Haz una cita</a>
+                        
                     </div>
                     <div class="col-md-5 order-md-1 d-flex align-items-center">
                         <img class="feat-img img-fluid" src="assets\img\content\Barba2.jpg" alt="Afeitado"></img>
                     </div>
                 </div>
+                
 
                 <hr class="featurette-divider" id="secc-cure">
 
@@ -328,11 +369,15 @@
                         sea que necesites una sesión de cuidado básico o un tratamiento de spa de lujo. Ven y experimenta la verdadera
                         atención personalizada en manicura y pedicura, y descubre lo que significa sentirte y lucir lo mejor posible desde la
                         punta de tus dedos hasta los talones.</p>
+                        
+                        <a type="button" class="btn btn-outline-info float-end btn-cita-featurette" href="#secc-contacto">Haz una cita</a>
+                        
                     </div>
                     <div class="col-md-5 d-flex align-items-center">
                             <img class="feat-img img-fluid" src="assets\img\content\Manosypies2.jpg" alt="Manicure"></img>
                     </div>
                 </div>
+                
 
                 <hr class="featurette-divider" id="secc-mapa">
 
@@ -342,10 +387,12 @@
 
             
             <div class="container">
-                <p class="text-center text-map">
-                    <a href="https://www.google.com.mx/maps/place/Barberia+Sergio/@19.4429106,-99.1788413,15z/data=!4m6!3m5!1s0x85d1f8ab3ade7393:0x3823eb1a7ea26459!8m2!3d19.4322404!4d-99.1862601!16s%2Fg%2F1vfp3zqg">
-                        <em><b>Encuentranos</b></em>
-                    </a> en el corazón de Polanco.
+                <p class="text-center text-map">Nos encontramos en el corazón de Polanco
+                    <br>
+                    <a type="button" class="btn btn-outline-dark tel-cita"  target="_blank"
+                    href="https://www.google.com.mx/maps/place/Barberia+Sergio/@19.4429106,-99.1788413,15z/data=!4m6!3m5!1s0x85d1f8ab3ade7393:0x3823eb1a7ea26459!8m2!3d19.4322404!4d-99.1862601!16s%2Fg%2F1vfp3zqg">
+                        <em><b>Visitanos</b></em>
+                    </a>
                 </p><br>
             </div>
 
@@ -363,14 +410,18 @@
                 <hr class="featurette-divider">
                 <h3 class="text-center">Haz una cita</h3>
                 <h3 class="text-center ">
-                    <a class="tel-cita" target="_blank" href="tel:+5255-5203-4675">
-                        <i class="fa fa-phone"></i>  
+                    <a type="button" class="btn btn-outline-dark tel-cita" target="_blank" href="tel:+5255-5203-4675">
+                        <i class="bi bi-telephone-forward-fill"></i>  
                         &#160 
                         <b>55 5203 4675</b></a></h3>
-                <br>
-                <br>
+                <h3 class="text-center ">
+                    <a type="button" class="btn btn-outline-dark tel-cita" target="_blank" href="tel:+5255-5203-4675">
+                        <i class="bi bi-telephone-forward-fill"></i>
+                        &#160
+                        <b>55 XXXX XXXX</b></a>
+                </h3>
                 <h3 class="text-center">
-                    <i class="fa fa-clock-o"></i>
+                    <i class="bi bi-clock"></i>
                     Nuestros horarios:</h3>
                     <br>
 

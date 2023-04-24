@@ -212,10 +212,12 @@ body {
 
 .icon-links{
     color: #dba858;
+    font-size: 20px;
 }
 .icon-links:hover{
     color:#2a5268;
 }
+
 
 .text-link{
     font-weight: normal;
@@ -272,9 +274,10 @@ footer.container-fluid{
 .tel-cita{
     margin-top: 10px;
     margin-bottom: 10px;
-    padding:0 50px 0 50px;
+    padding:1rem 2rem;
     color:#031b28;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
 .tel-cita:hover {
@@ -283,4 +286,9 @@ footer.container-fluid{
 
 .car-contacto{
     padding-bottom: 0;
+}
+
+.btn-cita-featurette{
+    margin-top:1.5rem;
+    margin-bottom: 2rem;
 }
